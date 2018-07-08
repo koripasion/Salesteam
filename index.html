@@ -210,259 +210,267 @@
     <div class="head">
       <img src="didicast.png" alt="">
     </div>
-    <div class="customerinfo">
-      <div class="listname">
-        CUSTOMER INFORMATION
-      </div>
-      <form class="customername" action="" method="post">
-        <p>고객사명<input id="customerinfo" type="text" name="customername" placeholder="   고객사명 + 담당자 성함"></p>
-        <p>DIDICAM 설치 위치<input id="customerinfo" type="text" name="setuparea" placeholder="   설치 주소 및 강의실 호수"> </p>
-        <p>DIDICAM 설치 일<input id="settupdate" type="text" name="setuparea" placeholder="   최소 2주 이후 설치가능">
-          <a href="https://calendar.google.com/calendar/b/1?cid=a29yaUBkaWRpY2FzdC5jb20"target="_blank">
-          <button id="schedule" type="button">가능 일자 확인</button>
-          </a>
-        </p>
-      </form>
-    </div>
-    <div class="opening">
-      <div class="listname">
-        OPENING LIST
-      </div>
-      <div class="listbox">
-        <figure>
-          <a href="https://youtu.be/_OOTVOpUzuw" target="_blank">
-          <img src="openingsample 1.png" alt="imagetest">
-          </a>
-        </figure>
-        <figure>
-          <a href="https://youtu.be/9-SwGQUwMOU" target="_blank">
-          <img src="openingsample 2.png" alt="imagetest">
-          </a>
-        </figure>
-        <figure>
-          <a href="https://youtu.be/m1pjAHWxbjo" target="_blank">
-          <img src="openingsample 3.png" alt="imagetest">
-          </a>
-        </figure>
-        <figure>
-          <a href="https://youtu.be/HKKjm-Wcfe0" target="_blank">
-          <img src="openingsample 4.png" alt="imagetest">
-          </a>
-        </figure>
-        <figure>
-          <a href="https://youtu.be/6-AKB_A5LKk" target="_blank">
-          <img src="openingsample 5.png" alt="imagetest">
-          </a>
-        </figure>
-      </div>
-      <div class="listbox" id="checkboxcase">
-        <figure>
-          <input class="checkbox" type="checkbox" name="openingsample 1" value="">
-        </figure>
-        <figure>
-          <input class="checkbox" type="checkbox" name="openingsample 2" value="">
-        </figure>
-        <figure>
-          <input class="checkbox" type="checkbox" name="openingsample 3" value="">
-        </figure>
-        <figure>
-          <input class="checkbox" type="checkbox" name="openingsample 4" value="">
-        </figure>
-        <figure>
-          <input class="checkbox" type="checkbox" name="openingsample 5" value="">
-        </figure>
-      </div>
-      <div class="listbox">
-        <figure>
-          <a href="https://youtu.be/1DzIshvd8Mc" target="_blank">
-          <img src="openingsample 6.png" alt="imagetest">
-          </a>
-        </figure>
-        <figure>
-          <a href="https://youtu.be/4-udJ3Bmlfo" target="_blank">
-          <img src="openingsample 7.png" alt="imagetest">
-          </a>
-        </figure>
-        <figure>
-          <img src="waiting.jpeg" alt="imagetest">
-        </figure>
-        <figure>
-          <img src="waiting.jpeg" alt="imagetest">
-        </figure>
-        <figure>
-          <img src="waiting.jpeg" alt="imagetest">
-        </figure>
+    <form  action="report.py" method="post">
+      <div class="customerinfo">
+        <div class="listname">
+          CUSTOMER INFORMATION
+        </div>
+        <div class="customername">
+          <!-- <form class="customername" action="report.py" method="post"> -->
+            <p>고객사명<input id="customerinfo" type="text" name="customername" placeholder="   고객사명 + 담당자 성함"></p>
+            <p>DIDICAM 설치 위치<input id="customerinfo" type="text" name="setuparea" placeholder="   설치 주소 및 강의실 호수"> </p>
+            <p>DIDICAM 설치 일<input id="settupdate" type="text" name="setupdate" placeholder="   2018.00.00">
+              <a href="https://calendar.google.com/calendar/b/1?cid=a29yaUBkaWRpY2FzdC5jb20"target="_blank">
+              <button id="schedule" type="button">가능 일자 확인</button>
+              </a>
+            </p>
+          <!-- </form> -->
+        </div>
 
       </div>
-      <div class="listbox" id="checkboxcase">
-        <figure>
-          <input class="checkbox" type="checkbox" name="openingsample 6" value="">
-        </figure>
-        <figure>
-          <input class="checkbox" type="checkbox" name="openingsample 7" value="">
-        </figure>
-        <!-- <figure>
-          <input class="checkbox" type="checkbox" name="" value="">
-        </figure>
-        <figure>
-          <input class="checkbox" type="checkbox" name="" value="">
-        </figure>
-        <figure>
-          <input class="checkbox" type="checkbox" name="" value="">
-        </figure> -->
+      <div class="opening">
+        <div class="listname">
+          OPENING LIST
+        </div>
+        <div class="listbox">
+          <figure>
+            <a href="https://youtu.be/_OOTVOpUzuw" target="_blank">
+            <img src="openingsample 1.png" alt="imagetest">
+            </a>
+          </figure>
+          <figure>
+            <a href="https://youtu.be/9-SwGQUwMOU" target="_blank">
+            <img src="openingsample 2.png" alt="imagetest">
+            </a>
+          </figure>
+          <figure>
+            <a href="https://youtu.be/m1pjAHWxbjo" target="_blank">
+            <img src="openingsample 3.png" alt="imagetest">
+            </a>
+          </figure>
+          <figure>
+            <a href="https://youtu.be/HKKjm-Wcfe0" target="_blank">
+            <img src="openingsample 4.png" alt="imagetest">
+            </a>
+          </figure>
+          <figure>
+            <a href="https://youtu.be/6-AKB_A5LKk" target="_blank">
+            <img src="openingsample 5.png" alt="imagetest">
+            </a>
+          </figure>
+        </div>
+        <div class="listbox" id="checkboxcase">
+          <figure>
+            <input class="checkbox" type="checkbox" name="openingsample1" value="opening1">
+          </figure>
+          <figure>
+            <input class="checkbox" type="checkbox" name="openingsample2" value="opening2">
+          </figure>
+          <figure>
+            <input class="checkbox" type="checkbox" name="openingsample3" value="1">
+          </figure>
+          <figure>
+            <input class="checkbox" type="checkbox" name="openingsample4" value="1">
+          </figure>
+          <figure>
+            <input class="checkbox" type="checkbox" name="openingsample5" value="1">
+          </figure>
+        </div>
+        <div class="listbox">
+          <figure>
+            <a href="https://youtu.be/1DzIshvd8Mc" target="_blank">
+            <img src="openingsample 6.png" alt="imagetest">
+            </a>
+          </figure>
+          <figure>
+            <a href="https://youtu.be/4-udJ3Bmlfo" target="_blank">
+            <img src="openingsample 7.png" alt="imagetest">
+            </a>
+          </figure>
+          <figure>
+            <img src="waiting.jpeg" alt="imagetest">
+          </figure>
+          <figure>
+            <img src="waiting.jpeg" alt="imagetest">
+          </figure>
+          <figure>
+            <img src="waiting.jpeg" alt="imagetest">
+          </figure>
+
+        </div>
+        <div class="listbox" id="checkboxcase">
+          <figure>
+            <input class="checkbox" type="checkbox" name="openingsample6" value="1">
+          </figure>
+          <figure>
+            <input class="checkbox" type="checkbox" name="openingsample7" value="1">
+          </figure>
+          <!-- <figure>
+            <input class="checkbox" type="checkbox" name="" value="">
+          </figure>
+          <figure>
+            <input class="checkbox" type="checkbox" name="" value="">
+          </figure>
+          <figure>
+            <input class="checkbox" type="checkbox" name="" value="">
+          </figure> -->
+        </div>
       </div>
-    </div>
-    <div class="_background">
-      <div class="listname">
-        BACKGROUND LIST
+      <div class="_background">
+        <div class="listname">
+          BACKGROUND LIST
+        </div>
+        <div class="listbox">
+          <figure>
+            <a href="https://drive.google.com/open?id=1FNTxL45BrLPtkauEHKMrbwRNMvxfbpIp" target="_blank">
+              <img src="background/property template.jpg" alt="imagetest">
+            </a>
+          </figure>
+          <figure>
+            <a href="https://drive.google.com/open?id=1xnVN-jCx3H2zDQ1vKKeSqr0QtJywrijM" target="_blank">
+            <img src="background/template_1.jpg" alt="imagetest">
+            </a>
+          </figure>
+          <figure>
+            <a href="https://drive.google.com/open?id=1FtL_BW4mfF_1ftk4y9DSSz8cZUDrhD43" target="_blank">
+            <img src="background/template_2.jpg" alt="imagetest">
+            </a>
+          </figure>
+          <figure>
+            <a href="https://drive.google.com/open?id=1-7VgBrQ6X7SyA56lAHazl1CfdmwltksR" target="_blank">
+            <img src="background/template_3.jpg" alt="imagetest">
+            </a>
+          </figure>
+          <figure>
+            <a href="https://drive.google.com/open?id=10rLqi4BC_UviX_9owNm8BfnKPzn-PbKe" target="_blank">
+            <img src="background/template_4.jpg" alt="imagetest">
+            </a>
+          </figure>
+        </div>
+        <div class="listbox" id="checkboxcase2">
+          <figure>
+            <input class="checkbox" type="checkbox" name="property template" value="1">
+          </figure>
+          <figure>
+            <input class="checkbox" type="checkbox" name="template_1" value="1">
+          </figure>
+          <figure>
+            <input class="checkbox" type="checkbox" name="template_2" value="1">
+          </figure>
+          <figure>
+            <input class="checkbox" type="checkbox" name="template_3" value="1">
+          </figure>
+          <figure>
+            <input class="checkbox" type="checkbox" name="template_4" value="1">
+          </figure>
+        </div>
+        <div class="listbox">
+          <figure>
+            <a href="https://drive.google.com/open?id=1T2ibwMxiKfAXrm0UJX9W_aw49HROQeG8" target="_blank">
+            <img src="background/template_5.jpg" alt="imagetest">
+            </a>
+          </figure>
+          <figure>
+            <a href="https://drive.google.com/open?id=10gtYFs1NsjeaU4V68AZg5DIdw8nuTPsB" target="_blank">
+            <img src="background/template_6.jpg" alt="imagetest">
+            </a>
+          </figure>
+          <figure>
+            <a href="https://drive.google.com/open?id=1hIQtHdg80iOESE8OTJaeTtskVzqaEE7d" target="_blank">
+            <img src="background/template_7.jpg" alt="imagetest">
+            </a>
+          </figure>
+          <figure>
+            <a href="https://drive.google.com/open?id=15UHJl0Nd-RKP4ohwmH6i-YoHYCZFYvey" target="_blank">
+            <img src="background/template_erica_1.jpg" alt="imagetest">
+            </a>
+          </figure>
+          <figure>
+            <a href="https://drive.google.com/open?id=1dGz4LNzYYdYf0UhwLw0glhuAo_0kAxXd" target="_blank">
+            <img src="background/template_erica_2.jpg" alt="imagetest">
+            </a>
+          </figure>
+        </div>
+        <div class="listbox" id="checkboxcase2">
+          <figure>
+            <input class="checkbox" type="checkbox" name="template_5" value="1">
+          </figure>
+          <figure>
+            <input class="checkbox" type="checkbox" name="template_6" value="1">
+          </figure>
+          <figure>
+            <input class="checkbox" type="checkbox" name="template_7" value="1">
+          </figure>
+          <figure>
+            <input class="checkbox" type="checkbox" name="template_erica_1" value="1">
+          </figure>
+          <figure>
+            <input class="checkbox" type="checkbox" name="template_erica_2" value="1">
+          </figure>
+        </div>
       </div>
-      <div class="listbox">
-        <figure>
-          <a href="https://drive.google.com/open?id=1FNTxL45BrLPtkauEHKMrbwRNMvxfbpIp" target="_blank">
-            <img src="background/property template.jpg" alt="imagetest">
-          </a>
-        </figure>
-        <figure>
-          <a href="https://drive.google.com/open?id=1xnVN-jCx3H2zDQ1vKKeSqr0QtJywrijM" target="_blank">
-          <img src="background/template_1.jpg" alt="imagetest">
-          </a>
-        </figure>
-        <figure>
-          <a href="https://drive.google.com/open?id=1FtL_BW4mfF_1ftk4y9DSSz8cZUDrhD43" target="_blank">
-          <img src="background/template_2.jpg" alt="imagetest">
-          </a>
-        </figure>
-        <figure>
-          <a href="https://drive.google.com/open?id=1-7VgBrQ6X7SyA56lAHazl1CfdmwltksR" target="_blank">
-          <img src="background/template_3.jpg" alt="imagetest">
-          </a>
-        </figure>
-        <figure>
-          <a href="https://drive.google.com/open?id=10rLqi4BC_UviX_9owNm8BfnKPzn-PbKe" target="_blank">
-          <img src="background/template_4.jpg" alt="imagetest">
-          </a>
-        </figure>
+      <div class="environment">
+        <div class="listname">
+          CUSTOMER ENVIRONMENT
+        </div>
+        <table id="customerenv">
+          <tr>
+            <th>LMS 제공여부확인</th>
+            <td> <input id="envcheck" type="checkbox" name="LMSsupply" value="Want LMS">LMS제공</td>
+            <td> <input id="envcheck" type="checkbox" name="LMSsupply2" value="No LMS"> LMS 제공안함</td>
+          </tr>
+          <tr>
+            <th>컴퓨터 제공여부</th>
+            <td> <input id="envcheck" type="checkbox" name="PCsupply" value="OwnPC"> 고정PC보유</td>
+            <td> <input id="envcheck" type="checkbox" name="PCsupply2" value="SantaPC"> 산타PC제공</td>
+            <td> <input id="envcheck" type="checkbox" name="PCsupply3" value="LecturePC"> 강사PC제공</td>
+          </tr>
+          <tr>
+            <th id="_ifselect">고정PC의 형태</th>
+            <td> <input id="envcheck" type="checkbox" name="PCstyle"> 데스크탑</td>
+            <td> <input id="envcheck" type="checkbox" name="PCstyle2"> 노트북</td>
+            <td> <input id="envcheck" type="checkbox" name="PCstyle3"> HDMI출력단자 보유</td>
+            <td> <input id="envcheck" type="checkbox" name="PCstyle4"> HDMI출력단자 없음</td>
+          </tr>
+          <tr>
+            <th>강의 촬영 환경</th>
+            <td> <input id="envcheck" type="checkbox" name="Recordstyle"> 오프라인 강의 동시촬영</td>
+            <td> <input id="envcheck" type="checkbox" name="Recordstyle2"> 온라인 강의를 위한 스케쥴</td>
+          </tr>
+          <tr>
+            <th>스크린형태</th>
+            <td> <input id="envcheck" type="checkbox" name="Screenstyle"> 빔스크린</td>
+            <td> <input id="envcheck" type="checkbox" name="Screenstyle2"> TV</td>
+            <td> <input id="envcheck" type="checkbox" name="Screenstyle3"> 전자칠판</td>
+            <td> <input id="envcheck" type="checkbox" name="Screenstyle4"> 판서강의</td>
+          </tr>
+          <tr>
+            <th>스크린 입력 단자 형태</th>
+            <td> <input id="envcheck" type="checkbox" name="inputstyle"> HDMI</td>
+            <td> <input id="envcheck" type="checkbox" name="inputstyle2"> VGA</td>
+            <td> <input id="envcheck" type="checkbox" name="inputstyle3"> DVI</td>
+          </tr>
+          <tr>
+            <th>랜선 보유 현황</th>
+            <td> <input id="envcheck" type="checkbox" name="Lanenv"> 설치장소 주변위치</td>
+            <td> <input id="envcheck" type="checkbox" name="Lanenv2"> 설치장소와 멀리위치</td>
+            <td> <input id="envcheck" type="checkbox" name="Lanenv3"> 랜선 없음</td>
+          </tr>
+          <tr>
+            <th>창문 현황</th>
+            <td> <input id="envcheck" type="checkbox" name="Windowenv"> 자연채광 많이 들어옴</td>
+            <td> <input id="envcheck" type="checkbox" name="Windowenv2"> 자연채광 관계 없음</td>
+            <td> <input id="envcheck" type="checkbox" name="Windowenv3"> 창문 없음</td>
+          </tr>
+        </table>
       </div>
-      <div class="listbox" id="checkboxcase2">
-        <figure>
-          <input class="checkbox" type="checkbox" name="property template" value="">
-        </figure>
-        <figure>
-          <input class="checkbox" type="checkbox" name="template_1" value="">
-        </figure>
-        <figure>
-          <input class="checkbox" type="checkbox" name="template_2" value="">
-        </figure>
-        <figure>
-          <input class="checkbox" type="checkbox" name="template_3" value="">
-        </figure>
-        <figure>
-          <input class="checkbox" type="checkbox" name="template_4" value="">
-        </figure>
+      <div class="bottom">
+        <!-- <form action="report.py" method="post"> -->
+            <button id="_submit" type="submit" name="제출하기">제출하기</button>
+        <!-- </form> -->
       </div>
-      <div class="listbox">
-        <figure>
-          <a href="https://drive.google.com/open?id=1T2ibwMxiKfAXrm0UJX9W_aw49HROQeG8" target="_blank">
-          <img src="background/template_5.jpg" alt="imagetest">
-          </a>
-        </figure>
-        <figure>
-          <a href="https://drive.google.com/open?id=10gtYFs1NsjeaU4V68AZg5DIdw8nuTPsB" target="_blank">
-          <img src="background/template_6.jpg" alt="imagetest">
-          </a>
-        </figure>
-        <figure>
-          <a href="https://drive.google.com/open?id=1hIQtHdg80iOESE8OTJaeTtskVzqaEE7d" target="_blank">
-          <img src="background/template_7.jpg" alt="imagetest">
-          </a>
-        </figure>
-        <figure>
-          <a href="https://drive.google.com/open?id=15UHJl0Nd-RKP4ohwmH6i-YoHYCZFYvey" target="_blank">
-          <img src="background/template_erica_1.jpg" alt="imagetest">
-          </a>
-        </figure>
-        <figure>
-          <a href="https://drive.google.com/open?id=1dGz4LNzYYdYf0UhwLw0glhuAo_0kAxXd" target="_blank">
-          <img src="background/template_erica_2.jpg" alt="imagetest">
-          </a>
-        </figure>
-      </div>
-      <div class="listbox" id="checkboxcase2">
-        <figure>
-          <input class="checkbox" type="checkbox" name="template_5" value="">
-        </figure>
-        <figure>
-          <input class="checkbox" type="checkbox" name="template_6" value="">
-        </figure>
-        <figure>
-          <input class="checkbox" type="checkbox" name="template_7" value="">
-        </figure>
-        <figure>
-          <input class="checkbox" type="checkbox" name="template_erica_1" value="">
-        </figure>
-        <figure>
-          <input class="checkbox" type="checkbox" name="template_erica_2" value="">
-        </figure>
-      </div>
-    </div>
-    <div class="environment">
-      <div class="listname">
-        CUSTOMER ENVIRONMENT
-      </div>
-      <table id="customerenv">
-        <tr>
-          <th>LMS 제공여부</th>
-          <td> <input id="envcheck" type="checkbox" name="LMS제공">LMS제공</td>
-          <td> <input id="envcheck" type="checkbox" name="LMS제공안함"> LMS 제공안함</td>
-        </tr>
-        <tr>
-          <th>컴퓨터 제공여부</th>
-          <td> <input id="envcheck" type="checkbox" name="고정PC보유"> 고정PC보유</td>
-          <td> <input id="envcheck" type="checkbox" name="산타PC제공"> 산타PC제공</td>
-          <td> <input id="envcheck" type="checkbox" name="강사PC제공"> 강사PC제공</td>
-        </tr>
-        <tr>
-          <th id="_ifselect">고정PC의 형태</th>
-          <td> <input id="envcheck" type="checkbox" name="데스크탑"> 데스크탑</td>
-          <td> <input id="envcheck" type="checkbox" name="노트북"> 노트북</td>
-          <td> <input id="envcheck" type="checkbox" name="HDMI출력단자 보유"> HDMI출력단자 보유</td>
-          <td> <input id="envcheck" type="checkbox" name="HDMI출력단자 없음"> HDMI출력단자 없음</td>
-        </tr>
-        <tr>
-          <th>강의 촬영 환경</th>
-          <td> <input id="envcheck" type="checkbox" name="오프라인 강의 동시촬영"> 오프라인 강의 동시촬영</td>
-          <td> <input id="envcheck" type="checkbox" name="온라인 강의를 위한 스케쥴"> 온라인 강의를 위한 스케쥴</td>
-        </tr>
-        <tr>
-          <th>스크린형태</th>
-          <td> <input id="envcheck" type="checkbox" name="빔스크린"> 빔스크린</td>
-          <td> <input id="envcheck" type="checkbox" name="TV"> TV</td>
-          <td> <input id="envcheck" type="checkbox" name="전자칠판"> 전자칠판</td>
-          <td> <input id="envcheck" type="checkbox" name="판서강의"> 판서강의</td>
-        </tr>
-        <tr>
-          <th>스크린 입력 단자 형태</th>
-          <td> <input id="envcheck" type="checkbox" name="HDMI"> HDMI</td>
-          <td> <input id="envcheck" type="checkbox" name="VGA"> VGA</td>
-          <td> <input id="envcheck" type="checkbox" name="DVI"> DVI</td>
-        </tr>
-        <tr>
-          <th>랜선 보유 현황</th>
-          <td> <input id="envcheck" type="checkbox" name="설치장소 주변위치"> 설치장소 주변위치</td>
-          <td> <input id="envcheck" type="checkbox" name="설치장소와 멀리위치"> 설치장소와 멀리위치</td>
-          <td> <input id="envcheck" type="checkbox" name="랜선 없음"> 랜선 없음</td>
-        </tr>
-        <tr>
-          <th>창문 현황</th>
-          <td> <input id="envcheck" type="checkbox" name="HDMI"> 자연채광 많이 들어옴</td>
-          <td> <input id="envcheck" type="checkbox" name="VGA"> 자연채광 관계 없음</td>
-          <td> <input id="envcheck" type="checkbox" name="DVI"> 창문 없음</td>
-        </tr>
-      </table>
-    </div>
-    <div class="bottom">
-      <button id="_submit" type="submit" name="제출하기">제출하기</button>
-    </div>
+    </form>
+
     <div class="contact">
       <div id="contact">
         산타 대표 박기웅<br>
